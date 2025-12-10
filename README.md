@@ -5,7 +5,7 @@
 1. Install YOLOv8-Seg by following the [official guide](https://github.com/ultralytics/ultralytics)
 2. Verify installation by downloading a test image, and running `testYOLO.py` inside `./yolo_scripts`. You will need to modify the image path.
 3. Download the RGB images and class-segmentation labels from the [VKITTI2 dataset](https://europe.naverlabs.com/proxy-virtual-worlds-vkitti-2/). 
-4. Modify the path in `./yolo_scripts/new_eval.py` 
+4. Modify the ROOT path in `./yolo_scripts/new_eval.py` with you dataset path
 ### Evaluation and Visualization
 Run the following command to get the IoUs and mIoU evaluation result, you need the semantic data.
 ```python
