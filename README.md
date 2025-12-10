@@ -15,7 +15,24 @@ python new_eval.py
 To get visualization, you may run the `testYOLO.py` file for single frame outputs.
 
 ## SAM3
-...existing content or project details...
+### Setup
+1. Install SAM3 by following the [official SAM 3 guide](https://github.com/facebookresearch/sam3). You will need to authenticate with Hugging Face (`huggingface-cli login`).
+2. Download the RGB images and class-segmentation labels from the [VKITTI2 dataset](https://europe.naverlabs.com/proxy-virtual-worlds-vkitti-2/).
+3. Update the `rgb_base` and `gt_base` paths in the benchmark scripts to point to your dataset location.
+
+### Evaluation
+We provide several benchmark scripts in `./sam3_scripts/` that evaluate SAM3's text-prompted segmentation on VKITTI:
+```bash
+# Scenes: 'Scene01', 'Scene02', 'Scene06', 'Scene18', 'Scene20'
+# Weather: 'clone', 'morning', 'rain', 'sunset', 'fog', 'overcast
+# Cameras: 'Camera_0', 'Camera_1'
+python benchmark_sam3.py --scene Scene20 --weather morning --camera Camera_0
+```
+This will output per-class IoU scores and mIoU to a CSV file. You can also try `benchmark_sam3.py` (prompts with COCO classes) or `benchmark_sam3_mini.py` (car/truck/traffic light only) depending on your use case.
+
+NOTE: 
+- The scripts ```benchmark_sam3_mini.py``` and ```benchmark_sam3_vkitti.py``` are essentially direct copies of ```benchmark_sam3.py```.
+- All that was changed were the classes to be queued and evaluated on, which were purely out of convenience; for proper usage, edit `benchmark_sam3.py` to fit your needs.
 
 ## CLIP+VGGT
 ### Setup
