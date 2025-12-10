@@ -1,0 +1,17 @@
+TRUE_SEGMENTATION_LABELS = {
+    "terrain": (210, 0, 200),
+    "sky": (90, 200, 255),
+    "tree": (0, 199, 0),
+    "vegetation": (90, 240, 0),
+    "building": (140, 140, 140),
+    "road": (100, 60, 100),
+    "guardrail": (250, 100, 255),
+    "trafficsign": (255, 255, 0),
+    "trafficlight": (200, 200, 0),
+    "pole": (255, 130, 0),
+    "misc": (80, 80, 80),
+    "truck": (160, 60, 60),
+    "car": (255, 127, 80),
+    "van": (0, 139, 139),
+    "undefined": (0, 0, 0),
+}

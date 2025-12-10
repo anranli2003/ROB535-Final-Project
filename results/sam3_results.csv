@@ -1,0 +1,16 @@
+class,iou,has_prompt_mapping,mapped_to
+terrain,0.0,True,terrain
+sky,0.9195748162317419,True,sky
+tree,0.7823523971003984,True,tree
+vegetation,0.012369251968858094,True,vegetation
+building,0.8949211868808018,True,building
+road,0.9045068918071979,True,road
+guardrail,0.0,True,guardrail
+trafficsign,0.3639739883462156,True,trafficsign
+trafficlight,0.17370194283791338,True,trafficlight
+pole,0.475938220351263,True,pole
+misc,0.0,True,misc
+truck,0.09832041386988825,True,truck
+car,0.8217469941871781,True,car
+van,0.22743445151864294,True,van
+mIoU,0.4053457539357213,,
